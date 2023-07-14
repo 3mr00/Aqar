@@ -901,7 +901,9 @@ section.properties-section.p80:after {
   opacity: 0.4;
   z-index: -1;
 }
-
+.property-card:hover {
+  transform: translateY(-12px);
+}
 @media (min-width: 1200px) {
   .col-xl-3 {
     -ms-flex: 0 0 25%;
@@ -1038,7 +1040,7 @@ section.projects-section {
   text-align: left;
 }
 
-/*///////////carousel///////////////*/
+/*///////////swiper js ///////////////*/
 .carousel-indicators .active {
   background-color: var(--mainColor) !important;
 }
@@ -1099,12 +1101,13 @@ section.projects-section {
 }
 @media (max-width: 516px) {
   .project-slide-box {
-    width: 90%;
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
-  .project-slide-box {
-    width: 70%;
+  .swiper-navBtn,
+  .swiper-pagination {
+    display: none !important;
   }
 }
 /*/////////////////////footer///////////////////////////////////*/
